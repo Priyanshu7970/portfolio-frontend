@@ -8,7 +8,7 @@ import Image from 'next/image';
 const NavBar2 = ({profile}) => {
   return (
     <>
-    <div className={`w-full z-50 top-0 py-3 sm:py-5  absolute bg-[#5440af] `}>
+    <div className={`w-full z-50 top-0 py-4 sm:py-5  absolute bg-[#5440af] `}>
     <div className="container flex items-center justify-between">
       <div>
         <Link href="/">

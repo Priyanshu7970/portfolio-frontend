@@ -217,7 +217,7 @@ const Post = ({ blog, author, profile,blog2 }) => {
           <div className="mx-auto max-w-4xl mt-10">
             <div className=''>
               <h1
-                className="pt-5 font-body text-2xl font-semibold text-primary sm:text-4xl md:text-5xl xl:text-6xl"
+                className="pt-5 font-body text-base font-bold text-primary sm:text-4xl md:text-5xl xl:text-5xl"
               >
                 {blog.title}
               </h1>
@@ -243,8 +243,8 @@ const Post = ({ blog, author, profile,blog2 }) => {
             <div className="prose max-w-none pt-8">
               <PortableText value={blog2.content} components={{
                 block: {
-                  h4: ({children}) => <h4 className="text-3xl">{children}</h4>,
-                  normal:({children})=> <p className='text-black'>{children}</p>,
+                  h4: ({children}) => <h4 className="text-4xl font-bold mb-7">{children}</h4>,
+                  normal:({children})=> <p className='text-black font-medium text-base'>{children}</p>,
                   blockquote: ({children}) => <blockquote className="border-l-purple-500">{children}</blockquote>,
               
                   customHeading: ({children}) => (

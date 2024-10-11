@@ -113,7 +113,9 @@ export default function Home({ blogs, profile }) {
       />
       <title>{`${profile.title} - Developer | Coder | Software Geek`}</title>
       <meta property="og:title" content="Homepage | Atom Template" />
-
+      <link rel="preload" href="/assets/img/bg-hero.jpg" as="image"></link>
+      <link rel="preload" as="image" href="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fp0ke04pe%2Fproduction%2F3ce6deb7ee01d39613196b01e28be05d4968be28-1024x1024.jpg%3Fw%3D200&amp;w=640&amp;q=75"></link>
+      <link rel="preload" href="/assets/img/bg-hero.jpg" as="image"/>
       <meta property="og:locale" content="en_US" />
 
       <link
@@ -164,7 +166,9 @@ export default function Home({ blogs, profile }) {
 
         <div><div
           className="relative bg-cover bg-center bg-no-repeat py-8"
-          style={{ backgroundImage: "url(/assets/img/bg-hero.jpg)" }}>
+          style={{ backgroundImage: "url(/assets/img/bg-hero.jpg)",
+            width:"100%"
+           }}>
           <div
             className="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"></div>
 
@@ -173,16 +177,14 @@ export default function Home({ blogs, profile }) {
             <div className="flex flex-col items-center justify-center lg:flex-row">
               <div className="rounded-full border-8 border-primary shadow-xl  ">
                 <Image
-                  src={builder.image(profile.image).width(200).url()}
-                  width={200} height={200}
-                  className="h-28 w-28 rounded-full lg:h-40 lg:w-44"
-                  alt="author" priority={true} quality={75}
+                  src={builder.image(profile.image).width(300).url()}
+                  width={400} height={200}
+                  className="h-28 w-28 rounded-full lg:h-36 lg:w-40"
+                  alt="author" priority={true} quality={80}
                 />
               </div>
               <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-                <h1 className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
-                  Hello I am {profile.name}!
-                </h1>
+              <h1 class="text-center font-header text-3xl text-white  sm:text-left sm:text-4xl md:text-5xl">Hello I am {profile.name}!</h1>
                 <div
                   className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                   <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
@@ -253,7 +255,7 @@ export default function Home({ blogs, profile }) {
                 >
                   I&#39;m {profile.name}, a {profile.work}
                 </h4>
-                <p className="pt-6 font-body leading-relaxed text-grey-20">
+                <p className="pt-6 font-body leading-relaxed text-[#525252]">
                   {profile.desc}
                 </p>
                 <div
