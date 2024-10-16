@@ -291,7 +291,7 @@ const Post = ({ blog, author, profile,blog2 }) => {
             <div
               className="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20"
             >
-              <div className="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
+              <div className="w-3/4 min-[300px]:w-auto sm:w-1/2 lg:w-1/4 xl:w-1/5">
                 <Image
                   src={`${builder.image(author.Image)}`}
                   width={360} height={360}

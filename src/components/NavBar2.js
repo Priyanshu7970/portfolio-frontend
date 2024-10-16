@@ -134,7 +134,6 @@ const NavBar2 = ({profile}) => {
         <li className="py-2">
           
           <span
-            click="triggerMobileNavItem('#about')"
             className="cursor-pointer pt-1 font-header font-semibold uppercase text-white"
             >About</span
           >
@@ -144,7 +143,6 @@ const NavBar2 = ({profile}) => {
         <li className="py-2">
           
           <span
-            click="triggerMobileNavItem('#services')"
             className="cursor-pointer pt-1 font-header font-semibold uppercase text-white"
             >Services</span
           >
@@ -154,7 +152,6 @@ const NavBar2 = ({profile}) => {
         <li className="py-2">
           
           <span
-            click="triggerMobileNavItem('#portfolio')"
             className="cursor-pointer pt-1 font-header font-semibold uppercase text-white"
             >Portfolio</span
           >
@@ -165,7 +162,6 @@ const NavBar2 = ({profile}) => {
         <li className="py-2">
           
           <span
-            click="triggerMobileNavItem('#work')"
             className="cursor-pointer pt-1 font-header font-semibold uppercase text-white"
             >Work</span
           >
@@ -175,7 +171,6 @@ const NavBar2 = ({profile}) => {
         <li className="py-2">
           
           <span
-            click="triggerMobileNavItem('#statistics')"
             className="cursor-pointer pt-1 font-header font-semibold uppercase text-white"
             >Statistics</span
           >
@@ -185,7 +180,6 @@ const NavBar2 = ({profile}) => {
         <li className="py-2">
           
           <span
-            click="triggerMobileNavItem('#blog')"
             className="cursor-pointer pt-1 font-header font-semibold uppercase text-white"
             >Blog</span
           >

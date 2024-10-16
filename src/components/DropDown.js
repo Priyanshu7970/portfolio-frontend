@@ -26,13 +26,13 @@ const DropDown = () => {
   }, [isOpen,dropdownRef]); // Only re-attach event listener on state change
 
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
        <button onClick={handleButtonClick} >
           <i className="bx bx-menu text-4xl text-white"></i>
         </button>
       {isOpen && (
-        <ul className="flex flex-col items-center justify-center mr-2 gap-3 absolute -left-14 rounded-md shadow-md mt-6 bg-[#4b389b]" ref={dropdownRef}>
-            <li className="group p-4  ">
+        <ul className="flex flex-col items-center justify-center mr-2 gap-3 absolute -left-14 rounded-md shadow-md mt-6 bg-[#4b389b]" >
+            <li className="group p-4 border-2 border-white  ">
              
              <a href="#about"><span
                 click="triggerNavItem('#about')"
@@ -43,7 +43,7 @@ const DropDown = () => {
               
             </li>
             
-            <li className="group p-4  ">
+            <li className="group p-4 border-2 border-white  ">
               <a href="#services"><span
                 click="triggerNavItem('#services')"
                 className="cursor-pointer font-header font-semibold uppercase text-white"
@@ -63,7 +63,7 @@ const DropDown = () => {
             </li>
             
             
-            <li className="group p-4  ">
+            <li className="group p-4 border-2 border-white  ">
               
              <a href="#work"><span
                 click="triggerNavItem('#work')"
@@ -74,7 +74,7 @@ const DropDown = () => {
               
             </li>
             
-            <li className="group p-4">
+            <li className="group p-4 border-2 border-white">
               <a href="#statistics">
               <span
                 click="triggerNavItem('#statistics')"
@@ -85,7 +85,7 @@ const DropDown = () => {
               
             </li>
             
-            <li className="group p-4  ">
+            <li className="group p-4 border-2 border-white ">
               
              <a href="#blog"><span
                 click="triggerNavItem('#blog')"
@@ -96,7 +96,7 @@ const DropDown = () => {
               
             </li>
             
-            <li className="group p-4 ">
+            <li className="group p-4 border-2 border-white ">
               
              <a href="#contact"> <span
                 click="triggerNavItem('#contact')"
