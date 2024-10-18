@@ -109,7 +109,7 @@ const NavBar = ({profile,color}) => {
           
         </ul>
       </div>
-      <div className="block lg:hidden">
+      <div className="block sm:block md:block lg:hidden">
         <DropDown className="text-4xl text-white"/>
       </div>
     </div>
