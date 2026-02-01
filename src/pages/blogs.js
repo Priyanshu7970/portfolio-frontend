@@ -55,8 +55,8 @@ const Blogs = ({blogs,profile}) => {
                     <div className="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
                     >
                         { blogs.map((item) => {
-                            return <Link key={item.slug.current} href={"/blog/" + item.slug.current} className="shadow">
-                                <div>
+                            return <Link key={item.slug.current} href={"/blog/" + item.slug.current} className="shadow flex flex-col h-full">
+                                <div className="flex flex-col h-full bg-white">
                                     <div
                                         style={{ backgroundImage: `url(${item.blogimage?builder.image(item.blogimage).width(200).url(): '/assets/img/post-01.png'})` }}
                                         className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -69,7 +69,7 @@ const Blogs = ({blogs,profile}) => {
                                         >Read More</span
                                         >
                                     </div>
-                                    <div className="bg-white py-6 px-5 xl:py-8">
+                                    <div className="bg-white flex-1 py-6 px-5 xl:py-8">
                                         <span className="block font-body text-lg font-semibold text-black"
                                         >{item.title}</span
                                         >
