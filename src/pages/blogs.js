@@ -69,14 +69,14 @@ const Blogs = ({blogs,profile}) => {
                                         >Read More</span
                                         >
                                     </div>
-                                    <div className="bg-white flex-1 py-6 px-5 xl:py-8">
-                                        <span className="block font-body text-lg font-semibold text-black"
-                                        >{item.title}</span
-                                        >
-                                        <span className="block pt-2 font-body text-grey-20"
-                                        >{item.metadesc}</span
-                                        >
-                                    </div>
+                                    <div className="bg-white flex-1 py-6 px-5 xl:py-8 flex flex-col">
+          <span className="block font-body text-lg font-semibold text-black min-h-[3.5rem] line-clamp-2">
+            {item.title}
+          </span>
+          <span className="block pt-2 font-body text-grey-20 flex-1">
+            {item.metadesc}
+          </span>
+        </div>
                                 </div>
                             </Link>
                         })}
