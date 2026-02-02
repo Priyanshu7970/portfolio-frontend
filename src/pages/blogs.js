@@ -47,7 +47,7 @@ const Blogs = ({ blogs, profile }) => {
                                                     Read More
                                                 </span>
                                             </div>
-                                            <div className="flex flex-1 flex-col py-6 px-5 xl:py-8">
+                                            <div className="flex h-full flex-1 flex-col py-6 px-5 xl:py-8">
                                                 <span className="block font-body text-lg font-semibold text-black min-h-[3.5rem] line-clamp-2">
                                                     {item.title}
                                                 </span>
